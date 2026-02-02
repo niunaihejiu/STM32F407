@@ -106,8 +106,9 @@ int main(void)
   MX_I2C1_Init();
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
-	 printf("气体检测系统启动成功！\r\n");
-   printf("所有外设初始化完成。\r\n");
+	printf("System STARTED!\r\n");
+	printf("All OK.\r\n");
+	MQ2_Calibrate(0.40f, 55);
   /* USER CODE END 2 */
 
   /* Infinite loop */
